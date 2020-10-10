@@ -1,0 +1,288 @@
+*{
+  margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth; 
+}
+/*width */
+::-webkit-scrollbar{
+  width:8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(145, 200, 255); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:yellow; 
+}
+
+
+.f1 img{
+  height: 50px;
+  position: absolute;
+  right: 5%;
+}
+
+.f1 h5{
+  color: white;
+  position: absolute;
+  right: 10%;
+}
+
+
+
+.sidenav li {
+  text-transform: uppercase;
+  font-family:cursive;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.sidenav li a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scale(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+.sidenav li a:hover:before,
+.sidenav li a:hover:after{
+transform: scaleX(1);
+}
+
+.sidenav li a:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scale(0);
+  transition: all 0.5s;
+  transform-origin: right;
+}
+
+
+h2,h3,h4{
+  padding: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid grey;
+}
+
+
+
+.card3 a:link,.card2 a:link,.card3 a:visited,.card2 a:visited{
+  color: black;
+  text-decoration: none;
+}
+.card{
+  padding: 10px;
+}
+.card1 img{
+  float: right;
+}
+
+.card2 li{
+  list-style: none;
+  text-transform: uppercase;
+  padding: 2px;
+  margin: 3px 7px;
+  letter-spacing: 1px;
+  line-height: 3;
+  border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+
+.card2 li:last-child{
+  border-bottom: none;
+}
+
+.card2 h3{
+  color: white;
+}
+
+.card2 .btn{
+  float: right;
+  padding: 4px 50px;
+  margin-top: 1%;
+}
+
+.card3 img{
+  max-height: 200px;
+}
+
+
+
+.bottom{
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.bottom p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-110%,-50%);
+}
+
+
+ul.sidenav {
+  list-style-type: none;
+  margin-top:-19px;
+  padding: 0;
+  width: 18%;
+  position: fixed;
+  height: 100%;
+  overflow:auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color:#555;
+  color: white;
+  }
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-top: 100px;
+  margin-left:18.7%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width:900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;position:fixed;display: none;
+  }
+  
+  div.content {margin-left: 0;}
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  height:100%;
+  top: 0;
+  right: 0;
+  
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display:none;
+  float: right;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+@media all and (max-width:900px){
+  .openbtn{
+display:block;}
+.profile{
+  display: none;
+}
+
+}
+.profile{
+  float: right;
+}
+.profile h4{
+  color: white;
+}
+.profile img{
+  width: 50px;height:50px;border-radius:50%;
+}
+.inputDnD .form-control-file {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 6em;
+  outline: none;
+  visibility: hidden;
+  cursor: pointer;
+  background-color: #c61c23;
+  box-shadow: 0 0 5px solid currentColor;
+}
+.inputDnD .form-control-file:before {
+  content: attr(data-title);
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 100%;
+  min-height: 6em;
+  line-height: 2em;
+  padding-top: 1.5em;
+  opacity: 1;
+  visibility: visible;
+  text-align: center;
+  border: 0.25em dashed currentColor;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.inputDnD .form-control-file:hover:before {
+  border-style: solid;
+  box-shadow: inset 0px 0px 0px 0.25em currentColor;
+}

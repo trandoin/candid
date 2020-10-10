@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth; 
+}
+.bg
+{
+top: 0px;
+background-image: url(../photos/about.jpg);
+position:relative;
+height: 500px;
+max-width: 100%;
+background-size:cover;
+background-repeat: no-repeat;
+background-clip: border-box;
+
+}
+.let{
+    font-size: larger;
+    font-family: 'Spectral', serif;
+      
+}
+.let a:hover{
+   
+    text-decoration: none;
+}
+.about_candid{
+    font-size: 72px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 2px 2px 6px crimson;
+}
+.dream{
+    font-size: 40px;
+    text-shadow: 1px 1px 3px rgb(46, 218, 12);
+    font-family: 'Domine', serif;
+    color:rgb(75, 75, 75);
+    font-weight: 700;
+    
+    text-decoration-color: rgb(156, 185, 211);
+    
+}
+#btnn{
+    border: 1px solid rgb(250, 218, 12);
+    text-decoration: none;
+    font-size: large;
+    padding: 5px 15px 5px 15px;
+    margin-right: 20px;
+    background-color: rgb(250, 218, 12);
+    color: aliceblue;
+    font-family:'roboto';
+    border-radius: 10px;
+    transition:all .6s;
+    
+}
+#btnn:hover{
+    border: 1px solid #3078c1;
+    background-color: #3078c1;
+
+}
+#btnn:active{
+    background-color: #3078c1;
+}
+.our_c{
+    background-color: whitesmoke;
+
+}
+.about_us{
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+.line{
+    width: 40%; 
+}
+
+@media all and (max-width: 667px) {
+    .bg{
+        height: 70%;
+    }
+    .about_candid{
+        font-size: 44px;
+        font-family: 'Libre Baskerville', serif;
+        text-transform: capitalize;
+        color: white;
+        text-shadow: 2px 2px 6px crimson;
+        text-transform: uppercase;
+    }
+    .line{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .dream{
+        font-size: 28px;
+        text-shadow: 1px 1px 3px rgb(46, 218, 12);
+        font-family: 'Domine', serif;
+        color:rgb(75, 75, 75);
+        font-weight: 700;
+        
+        text-decoration-color: rgb(156, 185, 211);
+        
+    }
+    #about-candid{
+        height: 400px;
+        overflow-y: scroll;
+        
+    }
+    #vission{
+        height: 400px;
+        overflow-y: scroll;
+    }
+    #mission{
+        height: 400px;
+        overflow-y: scroll;
+    }
+    #why-candid{
+        height: 400px;
+        overflow-y: scroll;
+    }
+}
+#about-candid h2,h5,h6,p{
+    font-family: 'Spectral', serif;
+}
+#vission p{
+    font-family: 'Spectral', serif;
+}
+#mission p{
+    font-family: 'Spectral', serif;
+}
+#why-candid p{
+    font-family: 'Spectral', serif;
+}
+#about-candid>h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3078c1;
+}
+#vission>h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3078c1;
+}
+#mission>h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3078c1;
+}
+#why-candid>h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3078c1;
+}#more1 , #more2 , #more3 , #more4{display: none;}
+.mybtn {
+    border-radius: 4px;
+    background-color: transparent;
+    border-bottom:2px solid #3078c1;
+    color: #3078c1;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  
+  .mybtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .mybtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .mybtn:hover span {
+    padding-right: 25px;
+  }
+  
+  .mybtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

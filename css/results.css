@@ -1,0 +1,23 @@
+.card1 {
+   
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial Helvatica;
+    padding: 5px;
+    height: 400px;
+  }
+  
+  .title_student {
+    color: grey;
+    font-size: 18px;
+  }
+#p{
+      color: #3078c1;font-weight: 700;
+  }
+.our-r{
+padding: 10px;font-family:'Noto+Sans+KR';font-weight: 600;
+}
+.our-rr{
+    font-family: Arial Helvatica;
+}

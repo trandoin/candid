@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.chaticon{
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#crossiconimg{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-top: -13px;
+    margin-right: -13px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.chaticon img{
+    width: 100%;
+    height: 100%;
+    
+}
+#chatcontent{
+box-shadow: 2px 2px 12px black;
+    background: rgba(37, 133, 211, 0.8);
+    height:max-content;
+    width:350px;
+    position: fixed;
+    top: 145px;
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    display:none;
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+@media all and (max-width: 480px){
+    #chatcontent{
+        background: rgba(37, 133, 211, 0.8);
+        height:max-content;
+        width: 90%;
+        position: fixed;
+        top:145px;
+        bottom: 30%;
+        z-index: 999;
+        left: 15px;
+        display:none;
+        border-radius: 20px;
+        padding-bottom: 15px;
+    }
+    .chaticon img{
+        border-radius: 50%;
+    }
+    .chaticon{
+        
+       
+        height: 55px;
+        width: 55px;
+        position: fixed;
+        right: 18px;
+        bottom: 14px;
+        z-index: 99;
+        cursor: pointer;
+        
+    }
+    #crossiconimg{
+        height: 30px;
+        width: 30px;
+        float: right;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #chatcontent p{
+        margin: 10px;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #chatcontent input,#chatcontent select,#chatcontent textarea{
+        width: 80%;
+        margin: auto;
+        border: 1px solid rgba(250,225,0);
+        color: rgb(22, 22, 22);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #chatcontent input::placeholder,#chatcontent textarea::placeholder{
+        color: rgb(22, 22, 22);
+    }
+
+}
+#chatheader{
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Noto+Serif';
+    padding: 5px;
+    border-bottom: 3px solid rgba(250,225,0);
+}
+#chatcontent input,#chatcontent select,#chatcontent textarea{
+    width: 80%;
+    margin: 15px auto;
+    border: 1px solid #3078c1;
+    color: rgb(29, 29, 29);
+    font-family: cursive;
+}
+#chatcontent button{
+    width:40%;
+    margin-left: 30%;
+    font-size: 20px;
+    
+}
+#chatcontent input::placeholder,#chatcontent textarea::placeholder{
+    color: rgb(29, 29, 29);font-family: cursive;
+}
